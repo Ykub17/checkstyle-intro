@@ -2,13 +2,11 @@ package core.basesyntax.model;
 
 import java.time.LocalDate;
 
-public class Hello_World
-{
-    private String a;
+public class HelloWorld {
+    private String greeting;
     private int variable;
     private int age;
     private int size;
-
 
     public static void main(String[] args) {
         Dog dog = new Dog();
@@ -16,7 +14,7 @@ public class Hello_World
     }
 
     private String getFromOneToTen() {
-        String result="";
+        String result = "";
 
         for (int i = 0; i < 10; i++) {
             if (i % 2 == 0) {
@@ -27,14 +25,15 @@ public class Hello_World
     }
 
     void sayHello(String hello) {
-        System.out.println("Hello, Mate! I am happy to see you! This class looks weird! Your task is to fix the checkstyle in this file." +
-        " Your goal is to run `mvn clean package` and receive `BUILD SUCCESS` message");
+        System.out.println("Hello, Mate! I am happy to see you! "
+                + "This class looks weird! Your task is to fix the checkstyle in this file. "
+                + "Your goal is to run `mvn clean package` and receive `BUILD SUCCESS` message");
         System.out.println(hello);
     }
 
     private void initializeVariables() {
-        a = "Hello mates!";
-        System.out.println(a);
+        greeting = "Hello mates!";
+        System.out.println(greeting);
         variable = LocalDate.now().getYear();
         System.out.println("It is "
                 + variable
@@ -46,5 +45,4 @@ public class Hello_World
         System.out.println("The size is "
                 + size);
     }
-
 }
